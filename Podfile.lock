@@ -1,5 +1,6 @@
 PODS:
   - Differentiator (3.0.2)
+  - MMLanScan (3.0.0)
   - Reactant (1.1.0):
     - Reactant/Core (= 1.1.0)
     - Reactant/Result (= 1.1.0)
@@ -40,14 +41,18 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
   - SnapKit (4.0.0)
+  - SwiftSocket (2.0.2)
 
 DEPENDENCIES:
+  - MMLanScan
   - Reactant (~> 1.0)
   - ReactantLiveUI
   - ReactantUI
+  - SwiftSocket
 
 SPEC CHECKSUMS:
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
   Reactant: 1910427bc0b05afeeb4e959e24bdd768dedb5258
   ReactantLiveUI: 6d6d8b2aaebcf00aec456b9b948333f9e0a896e9
   ReactantUI: 6d209cf3e780f0f0efd0b2c7424f59992e759320
@@ -57,7 +62,8 @@ SPEC CHECKSUMS:
   RxOptional: fabc37fc8e3cf4c336ebaeb5c92b576c64b2e6c5
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: 4594fde6b57bc7709f4ba60662b6ae8593fce98e
+PODFILE CHECKSUM: 364adcc14d5c7dfd021c54901d390bf1d8b45527
 
 COCOAPODS: 1.4.0

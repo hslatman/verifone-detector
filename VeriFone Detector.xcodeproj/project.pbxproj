@@ -11,6 +11,9 @@
 		DFF76B28208004810009BCB9 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B27208004810009BCB9 /* DeviceModel.swift */; };
 		DFF76B2A208006440009BCB9 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B29208006440009BCB9 /* DeviceCell.swift */; };
 		DFF76B2C208007EE0009BCB9 /* DeviceCell.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = DFF76B2B208007EE0009BCB9 /* DeviceCell.ui.xml */; };
+		DFF76B2E20800A3B0009BCB9 /* NetworkScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B2D20800A3B0009BCB9 /* NetworkScanner.swift */; };
+		DFF76B3020800A500009BCB9 /* VeriFoneRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B2F20800A500009BCB9 /* VeriFoneRecognizer.swift */; };
+		DFF76B3220800B620009BCB9 /* VeriFoneDetectorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B3120800B620009BCB9 /* VeriFoneDetectorService.swift */; };
 		OBJ_43 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* SampleModel.swift */; };
 		OBJ_44 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* GeneratedUI.swift */; };
 		OBJ_45 /* MainRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* MainRootView.swift */; };
@@ -33,6 +36,9 @@
 		DFF76B27208004810009BCB9 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		DFF76B29208006440009BCB9 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		DFF76B2B208007EE0009BCB9 /* DeviceCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DeviceCell.ui.xml; sourceTree = "<group>"; };
+		DFF76B2D20800A3B0009BCB9 /* NetworkScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScanner.swift; sourceTree = "<group>"; };
+		DFF76B2F20800A500009BCB9 /* VeriFoneRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriFoneRecognizer.swift; sourceTree = "<group>"; };
+		DFF76B3120800B620009BCB9 /* VeriFoneDetectorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriFoneDetectorService.swift; sourceTree = "<group>"; };
 		OBJ_11 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
 		OBJ_14 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		OBJ_17 /* MainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootView.swift; sourceTree = "<group>"; };
@@ -154,6 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_23 /* SampleService.swift */,
+				DFF76B2D20800A3B0009BCB9 /* NetworkScanner.swift */,
+				DFF76B2F20800A500009BCB9 /* VeriFoneRecognizer.swift */,
+				DFF76B3120800B620009BCB9 /* VeriFoneDetectorService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -318,6 +327,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VeriFone Detector/Pods-VeriFone Detector-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/MMLanScan/MMLanScan.framework",
 				"${BUILT_PRODUCTS_DIR}/Reactant/Reactant.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactantLiveUI/ReactantLiveUI.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -326,10 +336,12 @@
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMLanScan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reactant.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactantLiveUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -338,6 +350,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -395,8 +408,11 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_44 /* GeneratedUI.swift in Sources */,
+				DFF76B3220800B620009BCB9 /* VeriFoneDetectorService.swift in Sources */,
 				OBJ_43 /* SampleModel.swift in Sources */,
 				OBJ_45 /* MainRootView.swift in Sources */,
+				DFF76B2E20800A3B0009BCB9 /* NetworkScanner.swift in Sources */,
+				DFF76B3020800A500009BCB9 /* VeriFoneRecognizer.swift in Sources */,
 				OBJ_46 /* MainController.swift in Sources */,
 				OBJ_47 /* SampleService.swift in Sources */,
 				OBJ_48 /* MainWireframe.swift in Sources */,
