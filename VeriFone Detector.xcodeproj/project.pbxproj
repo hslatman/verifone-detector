@@ -1,576 +1,565 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      OBJ_1 = {
-         isa = "PBXProject";
-         attributes = {
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = OBJ_2;
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "English";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en",
-         );
-         mainGroup = OBJ_5;
-         productRefGroup = OBJ_6;
-         projectDirPath = ".";
-         targets = (
-            OBJ_37,
-            OBJ_57,
-         );
-      };
-      OBJ_10 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_11,
-         );
-         name = "Generated";
-         path = "Generated";
-         sourceTree = "<group>";
-      };
-      OBJ_11 = {
-         isa = "PBXFileReference";
-         path = "GeneratedUI.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_12 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_13,
-            OBJ_15,
-            OBJ_20,
-            OBJ_22,
-            OBJ_24,
-            OBJ_26,
-            OBJ_27,
-            OBJ_28,
-         );
-         name = "Sources";
-         path = "Sources";
-         sourceTree = "<group>";
-      };
-      OBJ_13 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_14,
-         );
-         name = "Models";
-         path = "Models";
-         sourceTree = "<group>";
-      };
-      OBJ_14 = {
-         isa = "PBXFileReference";
-         path = "SampleModel.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_15 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_16,
-         );
-         name = "Components";
-         path = "Components";
-         sourceTree = "<group>";
-      };
-      OBJ_16 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_17,
-            OBJ_18,
-            OBJ_19,
-         );
-         name = "Main";
-         path = "Main";
-         sourceTree = "<group>";
-      };
-      OBJ_17 = {
-         isa = "PBXFileReference";
-         path = "MainRootView.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_18 = {
-         isa = "PBXFileReference";
-         path = "MainRootView.ui.xml";
-         sourceTree = "<group>";
-      };
-      OBJ_19 = {
-         isa = "PBXFileReference";
-         path = "MainController.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_2 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_3,
-            OBJ_4,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_20 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_21,
-         );
-         name = "Styles";
-         path = "Styles";
-         sourceTree = "<group>";
-      };
-      OBJ_21 = {
-         isa = "PBXFileReference";
-         path = "General.styles.xml";
-         sourceTree = "<group>";
-      };
-      OBJ_22 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_23,
-         );
-         name = "Services";
-         path = "Services";
-         sourceTree = "<group>";
-      };
-      OBJ_23 = {
-         isa = "PBXFileReference";
-         path = "SampleService.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_24 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_25,
-         );
-         name = "Wireframes";
-         path = "Wireframes";
-         sourceTree = "<group>";
-      };
-      OBJ_25 = {
-         isa = "PBXFileReference";
-         path = "MainWireframe.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_26 = {
-         isa = "PBXFileReference";
-         path = "AppDelegate.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_27 = {
-         isa = "PBXFileReference";
-         path = "DependencyModule.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_28 = {
-         isa = "PBXFileReference";
-         path = "ApplicationModule.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_29 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_30,
-            OBJ_31,
-            OBJ_32,
-            OBJ_33,
-         );
-         name = "Resources";
-         path = "Resources";
-         sourceTree = "<group>";
-      };
-      OBJ_3 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "-DXcode",
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "iphoneos";
-            SUPPORTED_PLATFORMS = (
-               "iphonesimulator",
-               "iphoneos",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            SWIFT_VERSION = "4.0";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      OBJ_30 = {
-         isa = "PBXFileReference";
-         path = "Assets.xcassets";
-         sourceTree = "<group>";
-      };
-      OBJ_31 = {
-         isa = "PBXFileReference";
-         path = "LaunchScreen.storyboard";
-         sourceTree = "<group>";
-      };
-      OBJ_32 = {
-         isa = "PBXFileReference";
-         path = "Localizable.strings";
-         sourceTree = "<group>";
-      };
-      OBJ_33 = {
-         isa = "PBXFileReference";
-         path = "Info.plist";
-         sourceTree = "<group>";
-      };
-      OBJ_34 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_35,
-            OBJ_36,
-         );
-         name = "UnitTests";
-         path = "UnitTests";
-         sourceTree = "<group>";
-      };
-      OBJ_35 = {
-         isa = "PBXFileReference";
-         path = "Info.plist";
-         sourceTree = "<group>";
-      };
-      OBJ_36 = {
-         isa = "PBXFileReference";
-         path = "FirstTest.swift";
-         sourceTree = "<group>";
-      };
-      OBJ_37 = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = OBJ_38;
-         buildPhases = (
-            OBJ_41,
-            OBJ_42,
-            OBJ_52,
-            OBJ_56,
-         );
-         dependencies = (
-         );
-         name = "VeriFone Detector";
-         productName = "VeriFone_Detector";
-         productReference = OBJ_7;
-         productType = "com.apple.product-type.application";
-      };
-      OBJ_38 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_39,
-            OBJ_40,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_39 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-            ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
-            DEVELOPMENT_TEAM = "herman";
-            ENABLE_TESTABILITY = "YES";
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-            );
-            INFOPLIST_FILE = "Application/Resources/Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@executable_path/Frameworks",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "herman.VeriFone-Detector";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            TARGET_NAME = "VeriFone Detector";
-         };
-         name = "Debug";
-      };
-      OBJ_4 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            OTHER_SWIFT_FLAGS = (
-               "-DXcode",
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "iphoneos";
-            SUPPORTED_PLATFORMS = (
-               "iphonesimulator",
-               "iphoneos",
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
-            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-            SWIFT_VERSION = "4.0";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      OBJ_40 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-            ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
-            DEVELOPMENT_TEAM = "herman";
-            ENABLE_TESTABILITY = "YES";
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-            );
-            INFOPLIST_FILE = "Application/Resources/Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@executable_path/Frameworks",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "herman.VeriFone-Detector";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            TARGET_NAME = "VeriFone Detector";
-         };
-         name = "Release";
-      };
-      OBJ_41 = {
-         isa = "PBXShellScriptBuildPhase";
-         files = (
-         );
-         name = "Run ReactantUI";
-         shellPath = "/bin/sh";
-         shellScript = "pushd \"$PODS_ROOT/ReactantUI\"
-env -i HOME=\"$HOME\" PATH=\"$PATH\" swift build
-popd
-cd \"$SRCROOT/Application/Sources\"
-\"$PODS_ROOT/ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"";
-      };
-      OBJ_42 = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            OBJ_43,
-            OBJ_44,
-            OBJ_45,
-            OBJ_46,
-            OBJ_47,
-            OBJ_48,
-            OBJ_49,
-            OBJ_50,
-            OBJ_51,
-         );
-      };
-      OBJ_43 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_14;
-      };
-      OBJ_44 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_11;
-      };
-      OBJ_45 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_17;
-      };
-      OBJ_46 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_19;
-      };
-      OBJ_47 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_23;
-      };
-      OBJ_48 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_25;
-      };
-      OBJ_49 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_26;
-      };
-      OBJ_5 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_6,
-            OBJ_9,
-            OBJ_34,
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      OBJ_50 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_27;
-      };
-      OBJ_51 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_28;
-      };
-      OBJ_52 = {
-         isa = "PBXResourcesBuildPhase";
-         files = (
-            OBJ_53,
-            OBJ_54,
-            OBJ_55,
-         );
-      };
-      OBJ_53 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_30;
-      };
-      OBJ_54 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_31;
-      };
-      OBJ_55 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_32;
-      };
-      OBJ_56 = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      OBJ_57 = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = OBJ_58;
-         buildPhases = (
-            OBJ_61,
-            OBJ_63,
-            OBJ_64,
-         );
-         dependencies = (
-         );
-         name = "VeriFone DetectorUnitTests";
-         productName = "VeriFone_DetectorUnitTests";
-         productReference = OBJ_8;
-         productType = "com.apple.product-type.bundle.unit-test";
-      };
-      OBJ_58 = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            OBJ_59,
-            OBJ_60,
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Debug";
-      };
-      OBJ_59 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-            );
-            INFOPLIST_FILE = "UnitTests/Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            TARGET_NAME = "VeriFone DetectorUnitTests";
-         };
-         name = "Debug";
-      };
-      OBJ_6 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_7,
-            OBJ_8,
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_60 = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)",
-            );
-            INFOPLIST_FILE = "UnitTests/Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks",
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)",
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-            );
-            TARGET_NAME = "VeriFone DetectorUnitTests";
-         };
-         name = "Release";
-      };
-      OBJ_61 = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            OBJ_62,
-         );
-      };
-      OBJ_62 = {
-         isa = "PBXBuildFile";
-         fileRef = OBJ_36;
-      };
-      OBJ_63 = {
-         isa = "PBXResourcesBuildPhase";
-         files = (
-         );
-      };
-      OBJ_64 = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      OBJ_7 = {
-         isa = "PBXFileReference";
-         path = "VeriFone Detector";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_8 = {
-         isa = "PBXFileReference";
-         path = "VeriFone_DetectorUnitTests.xctest";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      OBJ_9 = {
-         isa = "PBXGroup";
-         children = (
-            OBJ_10,
-            OBJ_12,
-            OBJ_29,
-         );
-         name = "Application";
-         path = "Application";
-         sourceTree = "<group>";
-      };
-   };
-   rootObject = OBJ_1;
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11EEEBCE8837294EF4CB4A63 /* Pods_VeriFone_Detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA559CF6C83EC76BA76B41C9 /* Pods_VeriFone_Detector.framework */; };
+		DFF76B28208004810009BCB9 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B27208004810009BCB9 /* DeviceModel.swift */; };
+		DFF76B2A208006440009BCB9 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B29208006440009BCB9 /* DeviceCell.swift */; };
+		DFF76B2C208007EE0009BCB9 /* DeviceCell.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = DFF76B2B208007EE0009BCB9 /* DeviceCell.ui.xml */; };
+		OBJ_43 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* SampleModel.swift */; };
+		OBJ_44 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* GeneratedUI.swift */; };
+		OBJ_45 /* MainRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* MainRootView.swift */; };
+		OBJ_46 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* MainController.swift */; };
+		OBJ_47 /* SampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* SampleService.swift */; };
+		OBJ_48 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MainWireframe.swift */; };
+		OBJ_49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* AppDelegate.swift */; };
+		OBJ_50 /* DependencyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* DependencyModule.swift */; };
+		OBJ_51 /* ApplicationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ApplicationModule.swift */; };
+		OBJ_53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Assets.xcassets */; };
+		OBJ_54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* LaunchScreen.storyboard */; };
+		OBJ_55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Localizable.strings */; };
+		OBJ_62 /* FirstTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* FirstTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17161BE242AEE141F8981663 /* Pods-VeriFone Detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFone Detector.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFone Detector/Pods-VeriFone Detector.release.xcconfig"; sourceTree = "<group>"; };
+		A7097F785165C1B438F5C63A /* Pods-VeriFone Detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFone Detector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFone Detector/Pods-VeriFone Detector.debug.xcconfig"; sourceTree = "<group>"; };
+		CA559CF6C83EC76BA76B41C9 /* Pods_VeriFone_Detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriFone_Detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF76B27208004810009BCB9 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		DFF76B29208006440009BCB9 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		DFF76B2B208007EE0009BCB9 /* DeviceCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DeviceCell.ui.xml; sourceTree = "<group>"; };
+		OBJ_11 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
+		OBJ_14 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		OBJ_17 /* MainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootView.swift; sourceTree = "<group>"; };
+		OBJ_18 /* MainRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MainRootView.ui.xml; sourceTree = "<group>"; };
+		OBJ_19 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		OBJ_21 /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
+		OBJ_23 /* SampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleService.swift; sourceTree = "<group>"; };
+		OBJ_25 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		OBJ_26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		OBJ_27 /* DependencyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyModule.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ApplicationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationModule.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		OBJ_31 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		OBJ_32 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		OBJ_33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_36 /* FirstTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTest.swift; sourceTree = "<group>"; };
+		OBJ_7 /* VeriFone Detector */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = "VeriFone Detector"; path = VeriFone_Detector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_8 /* VeriFone_DetectorUnitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = VeriFone_DetectorUnitTests.xctest; path = "VeriFone DetectorUnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				11EEEBCE8837294EF4CB4A63 /* Pods_VeriFone_Detector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		771317E2E9A54E4D74A9116B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7097F785165C1B438F5C63A /* Pods-VeriFone Detector.debug.xcconfig */,
+				17161BE242AEE141F8981663 /* Pods-VeriFone Detector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECB123AE94BAB49054FE07CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA559CF6C83EC76BA76B41C9 /* Pods_VeriFone_Detector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* GeneratedUI.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		OBJ_12 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* Models */,
+				OBJ_15 /* Components */,
+				OBJ_20 /* Styles */,
+				OBJ_22 /* Services */,
+				OBJ_24 /* Wireframes */,
+				OBJ_26 /* AppDelegate.swift */,
+				OBJ_27 /* DependencyModule.swift */,
+				OBJ_28 /* ApplicationModule.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		OBJ_13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* SampleModel.swift */,
+				DFF76B27208004810009BCB9 /* DeviceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Main */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		OBJ_16 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* MainRootView.swift */,
+				OBJ_18 /* MainRootView.ui.xml */,
+				OBJ_19 /* MainController.swift */,
+				DFF76B29208006440009BCB9 /* DeviceCell.swift */,
+				DFF76B2B208007EE0009BCB9 /* DeviceCell.ui.xml */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		OBJ_20 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* General.styles.xml */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		OBJ_22 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* SampleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		OBJ_24 /* Wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* MainWireframe.swift */,
+			);
+			path = Wireframes;
+			sourceTree = "<group>";
+		};
+		OBJ_29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* Assets.xcassets */,
+				OBJ_31 /* LaunchScreen.storyboard */,
+				OBJ_32 /* Localizable.strings */,
+				OBJ_33 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* Info.plist */,
+				OBJ_36 /* FirstTest.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Products */,
+				OBJ_9 /* Application */,
+				OBJ_34 /* UnitTests */,
+				771317E2E9A54E4D74A9116B /* Pods */,
+				ECB123AE94BAB49054FE07CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_7 /* VeriFone Detector */,
+				OBJ_8 /* VeriFone_DetectorUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* Generated */,
+				OBJ_12 /* Sources */,
+				OBJ_29 /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_37 /* VeriFone Detector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "VeriFone Detector" */;
+			buildPhases = (
+				F605EBAE77ABB476203828BF /* [CP] Check Pods Manifest.lock */,
+				OBJ_41 /* Run ReactantUI */,
+				OBJ_42 /* Sources */,
+				OBJ_52 /* Resources */,
+				OBJ_56 /* Frameworks */,
+				34B9B59727D630EDA264CAE7 /* [CP] Embed Pods Frameworks */,
+				ED57C415FF43A8F4EA5AFF1A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VeriFone Detector";
+			productName = VeriFone_Detector;
+			productReference = OBJ_7 /* VeriFone Detector */;
+			productType = "com.apple.product-type.application";
+		};
+		OBJ_57 /* VeriFone DetectorUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "VeriFone DetectorUnitTests" */;
+			buildPhases = (
+				OBJ_61 /* Sources */,
+				OBJ_63 /* Resources */,
+				OBJ_64 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VeriFone DetectorUnitTests";
+			productName = VeriFone_DetectorUnitTests;
+			productReference = OBJ_8 /* VeriFone_DetectorUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					OBJ_37 = {
+						DevelopmentTeam = herman;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "VeriFone Detector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_37 /* VeriFone Detector */,
+				OBJ_57 /* VeriFone DetectorUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		OBJ_52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				DFF76B2C208007EE0009BCB9 /* DeviceCell.ui.xml in Resources */,
+				OBJ_53 /* Assets.xcassets in Resources */,
+				OBJ_54 /* LaunchScreen.storyboard in Resources */,
+				OBJ_55 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34B9B59727D630EDA264CAE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VeriFone Detector/Pods-VeriFone Detector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Reactant/Reactant.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactantLiveUI/ReactantLiveUI.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reactant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactantLiveUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeriFone Detector/Pods-VeriFone Detector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED57C415FF43A8F4EA5AFF1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeriFone Detector/Pods-VeriFone Detector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F605EBAE77ABB476203828BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeriFone Detector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		OBJ_41 /* Run ReactantUI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			name = "Run ReactantUI";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd \"$PODS_ROOT/ReactantUI\"\nenv -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\npopd\ncd \"$SRCROOT/Application/Sources\"\n\"$PODS_ROOT/ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_44 /* GeneratedUI.swift in Sources */,
+				OBJ_43 /* SampleModel.swift in Sources */,
+				OBJ_45 /* MainRootView.swift in Sources */,
+				OBJ_46 /* MainController.swift in Sources */,
+				OBJ_47 /* SampleService.swift in Sources */,
+				OBJ_48 /* MainWireframe.swift in Sources */,
+				OBJ_49 /* AppDelegate.swift in Sources */,
+				DFF76B28208004810009BCB9 /* DeviceModel.swift in Sources */,
+				DFF76B2A208006440009BCB9 /* DeviceCell.swift in Sources */,
+				OBJ_50 /* DependencyModule.swift in Sources */,
+				OBJ_51 /* ApplicationModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_62 /* FirstTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7097F785165C1B438F5C63A /* Pods-VeriFone Detector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = herman;
+				ENABLE_TESTABILITY = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Application/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "herman.VeriFone-Detector";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = "VeriFone Detector";
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17161BE242AEE141F8981663 /* Pods-VeriFone Detector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = herman;
+				ENABLE_TESTABILITY = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Application/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "herman.VeriFone-Detector";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = "VeriFone Detector";
+			};
+			name = Release;
+		};
+		OBJ_59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = "VeriFone DetectorUnitTests";
+			};
+			name = Debug;
+		};
+		OBJ_60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = "VeriFone DetectorUnitTests";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "VeriFone Detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_38 /* Build configuration list for PBXNativeTarget "VeriFone Detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_39 /* Debug */,
+				OBJ_40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_58 /* Build configuration list for PBXNativeTarget "VeriFone DetectorUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_59 /* Debug */,
+				OBJ_60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
 }

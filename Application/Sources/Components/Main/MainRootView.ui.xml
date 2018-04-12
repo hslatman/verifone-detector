@@ -7,7 +7,10 @@
                         http://schema.reactant.tech/layout http://schema.reactant.tech/layout.xsd"
     rootView="true">
 
-    <Label
-        text="Hello World!"
-        layout:center="super" />
+<!--    <Label-->
+<!--        text="Hello World!"-->
+<!--        layout:center="super" />-->
+    <View
+    field="deviceTableView"
+    layout:edges="super" />
 </Component>
