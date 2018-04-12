@@ -1,0 +1,63 @@
+PODS:
+  - Differentiator (3.0.2)
+  - Reactant (1.1.0):
+    - Reactant/Core (= 1.1.0)
+    - Reactant/Result (= 1.1.0)
+  - Reactant/Configuration (1.1.0):
+    - RxSwift (~> 4.0)
+    - SnapKit (~> 4.0)
+  - Reactant/Core (1.1.0):
+    - Reactant/Configuration
+    - RxCocoa (~> 4.0)
+    - RxOptional (~> 3.0)
+    - RxSwift (~> 4.0)
+    - SnapKit (~> 4.0)
+  - Reactant/FallbackSafeAreaInsets (1.1.0):
+    - Reactant/Core
+  - Reactant/Result (1.1.0):
+    - Result (~> 3.0)
+    - RxOptional (~> 3.0)
+    - RxSwift (~> 4.0)
+  - Reactant/TableView (1.1.0):
+    - Reactant/Core
+    - RxCocoa (~> 4.0)
+    - RxDataSources (~> 3.0)
+  - ReactantLiveUI (0.2.0):
+    - Reactant (> 1.0)
+    - Reactant/FallbackSafeAreaInsets (> 1.0)
+    - Reactant/TableView (> 1.0)
+    - RxCocoa
+  - ReactantUI (0.2.0)
+  - Result (3.2.4)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxOptional (3.3.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Reactant (~> 1.0)
+  - ReactantLiveUI
+  - ReactantUI
+
+SPEC CHECKSUMS:
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Reactant: 1910427bc0b05afeeb4e959e24bdd768dedb5258
+  ReactantLiveUI: 6d6d8b2aaebcf00aec456b9b948333f9e0a896e9
+  ReactantUI: 6d209cf3e780f0f0efd0b2c7424f59992e759320
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: 4594fde6b57bc7709f4ba60662b6ae8593fce98e
+
+COCOAPODS: 1.4.0

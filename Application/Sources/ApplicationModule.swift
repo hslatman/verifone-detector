@@ -1,0 +1,2 @@
+final class ApplicationModule: DependencyModule {
+}
