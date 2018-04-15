@@ -8,6 +8,7 @@
 import Foundation
 
 import RxSwift
+import RxCocoa
 
 protocol VerifoneDetectorDelegate {
     func didDetectNewDevice()
@@ -18,7 +19,7 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     var scanner : NetworkScanner!
     var recognizer : VerifoneRecognizer!
     
-    var detectedDevices : Variable<[Device]> = Variable([])//Results<Device>?
+    var detectedDevices : BehaviorRelay<[Device]> = BehaviorRelay(value: [])//Results<Device>?
     
     var delegate : VerifoneDetectorDelegate?
     
@@ -50,7 +51,9 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
         }
 
         if !ips.contains(device.ip) {
-            self.detectedDevices.value.append(device)
+            // Note: it looks a bit ugly; is this the way to go?
+            // https://github.com/ReactiveX/RxSwift/issues/1501#issuecomment-349562384
+            self.detectedDevices.accept(self.detectedDevices.value + [device])
         }
         
         //if 1detectedDevices.contains(
