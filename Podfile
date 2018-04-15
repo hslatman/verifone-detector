@@ -6,4 +6,6 @@ target 'VeriFone Detector' do
     pod 'ReactantLiveUI', :configuration => 'Debug'
     pod 'MMLanScan'
     pod 'SwiftSocket'
+    pod 'RealmSwift'
+    pod 'RxRealm'
 end

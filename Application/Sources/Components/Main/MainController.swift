@@ -27,7 +27,7 @@ final class MainController: ControllerBase<Void, MainRootView> {
                 self.rootView.componentState = devices
             })
             .disposed(by: lifetimeDisposeBag)
-    }
+        }
     
     override func viewWillAppear(_ animated: Bool) {
         invalidate()

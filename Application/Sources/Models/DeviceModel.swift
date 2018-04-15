@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct Device {
-    var ip : IPAddress
+import RealmSwift
+
+class Device : Object {
+    @objc dynamic var ip : IPAddress = ""
+    @objc dynamic var isVerifone : Bool = false
+
     //    var mac : String
     //    var brand : String
     //    var host : String
-    var isVerifone : Bool
+    //var isVerifone : Bool
 }

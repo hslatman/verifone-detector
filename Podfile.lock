@@ -29,6 +29,11 @@ PODS:
     - Reactant/TableView (> 1.0)
     - RxCocoa
   - ReactantUI (0.2.0)
+  - Realm (3.3.2):
+    - Realm/Headers (= 3.3.2)
+  - Realm/Headers (3.3.2)
+  - RealmSwift (3.3.2):
+    - Realm (= 3.3.2)
   - Result (3.2.4)
   - RxCocoa (4.1.2):
     - RxSwift (~> 4.0)
@@ -39,6 +44,9 @@ PODS:
   - RxOptional (3.4.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
+  - RxRealm (0.7.5):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
   - SnapKit (4.0.0)
   - SwiftSocket (2.0.2)
@@ -48,6 +56,8 @@ DEPENDENCIES:
   - Reactant (~> 1.0)
   - ReactantLiveUI
   - ReactantUI
+  - RealmSwift
+  - RxRealm
   - SwiftSocket
 
 SPEC CHECKSUMS:
@@ -56,14 +66,17 @@ SPEC CHECKSUMS:
   Reactant: 1910427bc0b05afeeb4e959e24bdd768dedb5258
   ReactantLiveUI: 6d6d8b2aaebcf00aec456b9b948333f9e0a896e9
   ReactantUI: 6d209cf3e780f0f0efd0b2c7424f59992e759320
+  Realm: d927fbf66df5532cfafc08afb5f7e53ded37b894
+  RealmSwift: 4e903a494e05d866581d69ad6f7e7b879d446baf
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxOptional: fabc37fc8e3cf4c336ebaeb5c92b576c64b2e6c5
+  RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: 364adcc14d5c7dfd021c54901d390bf1d8b45527
+PODFILE CHECKSUM: bd5f1d3c29664191dffe83dcc70b2e8bf65131f5
 
 COCOAPODS: 1.4.0

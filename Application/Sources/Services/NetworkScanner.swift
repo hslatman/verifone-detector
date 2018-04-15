@@ -98,7 +98,9 @@ class NetworkScanner : NSObject, MMLANScannerDelegate {
             self.scannedDevices.append(device)
             print("\(device): \(device.ipAddress)")
             
-            let deviceModel = Device(ip: device.ipAddress, isVerifone: false)
+            let deviceModel = Device() //Device(ip: device.ipAddress, isVerifone: false)
+            deviceModel.ip = device.ipAddress
+            deviceModel.isVerifone = false
             self.delegate?.networkScannerDidFindNewDevice(device: deviceModel)
         }
     }
