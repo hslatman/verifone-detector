@@ -14,8 +14,6 @@ protocol VerifoneDetectorDelegate {
 }
 
 class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
-
-    //let chocolates: Variable<[Chocolate]> = Variable([])
     
     var scanner : NetworkScanner!
     var recognizer : VerifoneRecognizer!
@@ -27,13 +25,10 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     override init() {
 
         super.init()
-        
-        //self.detectedDevices = realm.objects(Device.self)
 
         self.scanner = NetworkScanner(delegate: self) //NetworkScannerRunner(delegate: self)
         self.recognizer = VerifoneRecognizer()
         
-
     }
     
     func startDetection() {
@@ -44,16 +39,6 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     
     func networkScannerIPSearchFinished() {
         print("ping finished")
-        
-//        let result = self.scanner.retrieveResult()
-        
-//        for ip : IPAddress in result {
-//            let isVerifone = self.recognizer.check(ip: ip)
-//            let device = Device(ip: ip, isVerifone: isVerifone)
-//            self.detectedDevices.append(device)
-//            self.delegate?.didDetectNewDevice()
-//            print("added detected device")
-//        }
     }
     
     func networkScannerDidFindNewDevice(device: Device) {
