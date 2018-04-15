@@ -47,6 +47,11 @@ PODS:
   - RxRealm (0.7.5):
     - RealmSwift (~> 3.0)
     - RxSwift (~> 4.0)
+  - RxRealmDataSources (0.2.9):
+    - RealmSwift (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxRealm (~> 0.7.3)
+    - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
   - SnapKit (4.0.0)
   - SwiftSocket (2.0.2)
@@ -58,6 +63,7 @@ DEPENDENCIES:
   - ReactantUI
   - RealmSwift
   - RxRealm
+  - RxRealmDataSources
   - SwiftSocket
 
 SPEC CHECKSUMS:
@@ -73,10 +79,11 @@ SPEC CHECKSUMS:
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxOptional: fabc37fc8e3cf4c336ebaeb5c92b576c64b2e6c5
   RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
+  RxRealmDataSources: 798303f1d7db18d80da9e95bab9605010378040e
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: bd5f1d3c29664191dffe83dcc70b2e8bf65131f5
+PODFILE CHECKSUM: f3a9655464bb46f267f7743ca332f3364272b8f1
 
 COCOAPODS: 1.4.0

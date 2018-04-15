@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11EEEBCE8837294EF4CB4A63 /* Pods_VeriFone_Detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA559CF6C83EC76BA76B41C9 /* Pods_VeriFone_Detector.framework */; };
+		DF3C4889208376E2003D0559 /* Results+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C4888208376E2003D0559 /* Results+Rx.swift */; };
 		DFF76B28208004810009BCB9 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B27208004810009BCB9 /* DeviceModel.swift */; };
 		DFF76B2A208006440009BCB9 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B29208006440009BCB9 /* DeviceCell.swift */; };
 		DFF76B2C208007EE0009BCB9 /* DeviceCell.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = DFF76B2B208007EE0009BCB9 /* DeviceCell.ui.xml */; };
@@ -31,6 +32,7 @@
 		17161BE242AEE141F8981663 /* Pods-VeriFone Detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFone Detector.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFone Detector/Pods-VeriFone Detector.release.xcconfig"; sourceTree = "<group>"; };
 		A7097F785165C1B438F5C63A /* Pods-VeriFone Detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFone Detector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFone Detector/Pods-VeriFone Detector.debug.xcconfig"; sourceTree = "<group>"; };
 		CA559CF6C83EC76BA76B41C9 /* Pods_VeriFone_Detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriFone_Detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3C4888208376E2003D0559 /* Results+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+Rx.swift"; sourceTree = "<group>"; };
 		DFF76B27208004810009BCB9 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		DFF76B29208006440009BCB9 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		DFF76B2B208007EE0009BCB9 /* DeviceCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DeviceCell.ui.xml; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		OBJ_33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		OBJ_35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		OBJ_36 /* FirstTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTest.swift; sourceTree = "<group>"; };
-		OBJ_7 /* VeriFone Detector */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = "VeriFone Detector"; path = VeriFone_Detector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_7 /* VeriFone_Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = VeriFone_Detector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_8 /* VeriFone_DetectorUnitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = VeriFone_DetectorUnitTests.xctest; path = "VeriFone DetectorUnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 				OBJ_31 /* LaunchScreen.storyboard */,
 				OBJ_32 /* Localizable.strings */,
 				OBJ_33 /* Info.plist */,
+				DF3C4888208376E2003D0559 /* Results+Rx.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -203,7 +206,7 @@
 		OBJ_6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_7 /* VeriFone Detector */,
+				OBJ_7 /* VeriFone_Detector.app */,
 				OBJ_8 /* VeriFone_DetectorUnitTests.xctest */,
 			);
 			name = Products;
@@ -240,7 +243,7 @@
 			);
 			name = "VeriFone Detector";
 			productName = VeriFone_Detector;
-			productReference = OBJ_7 /* VeriFone Detector */;
+			productReference = OBJ_7 /* VeriFone_Detector.app */;
 			productType = "com.apple.product-type.application";
 		};
 		OBJ_57 /* VeriFone DetectorUnitTests */ = {
@@ -412,6 +415,7 @@
 				OBJ_45 /* MainRootView.swift in Sources */,
 				DFF76B2E20800A3B0009BCB9 /* NetworkScanner.swift in Sources */,
 				DFF76B3020800A500009BCB9 /* VeriFoneRecognizer.swift in Sources */,
+				DF3C4889208376E2003D0559 /* Results+Rx.swift in Sources */,
 				OBJ_46 /* MainController.swift in Sources */,
 				OBJ_48 /* MainWireframe.swift in Sources */,
 				OBJ_49 /* AppDelegate.swift in Sources */,

@@ -8,4 +8,5 @@ target 'VeriFone Detector' do
     pod 'SwiftSocket'
     pod 'RealmSwift'
     pod 'RxRealm'
+    pod 'RxRealmDataSources'
 end
