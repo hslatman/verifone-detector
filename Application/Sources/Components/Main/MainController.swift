@@ -26,7 +26,7 @@ final class MainController: ControllerBase<Void, MainRootView> {
     
     override func afterInit() {
         // Add button for starting a scan
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: ScanButton.Start.rawValue, style: .plain) { [unowned self, dependencies] in
+        let rightBarButtonItem = UIBarButtonItem(title: ScanButton.Start.rawValue, style: .plain) { [unowned self, dependencies] in
             
             guard let buttonItem = self.navigationItem.rightBarButtonItem, let text = buttonItem.title else {
                 print("returning")
@@ -43,6 +43,9 @@ final class MainController: ControllerBase<Void, MainRootView> {
             
             self.invalidate()
         }
+        
+        //navigationItem.setRightBarButtonItems([rightBarButtonItem], animated: true)
+        navigationItem.rightBarButtonItem = rightBarButtonItem
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Clear", style: .plain) { [unowned self, dependencies] in
             dependencies.dataService.clear()

@@ -10,6 +10,7 @@
 <!--    <Label-->
 <!--        text="Hello World!"-->
 <!--        layout:center="super" />-->
+
     <View
     field="deviceTableView"
     layout:edges="super" />
