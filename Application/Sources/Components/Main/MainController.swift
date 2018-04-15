@@ -44,8 +44,12 @@ final class MainController: ControllerBase<Void, MainRootView> {
             self.invalidate()
         }
         
-        //navigationItem.setRightBarButtonItems([rightBarButtonItem], animated: true)
-        navigationItem.rightBarButtonItem = rightBarButtonItem
+        // A button used to show a percentage; hacky
+        let progressBarButtonItem = UIBarButtonItem(title: "", style: .done)
+        progressBarButtonItem.isEnabled = false
+        
+        navigationItem.setRightBarButtonItems([rightBarButtonItem, progressBarButtonItem], animated: true)
+        //navigationItem.rightBarButtonItem = rightBarButtonItem
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Clear", style: .plain) { [unowned self, dependencies] in
             dependencies.dataService.clear()
@@ -63,10 +67,29 @@ final class MainController: ControllerBase<Void, MainRootView> {
             .subscribe(onNext: { devices  in
                 self.rootView.componentState = devices
             })
-    }
-    
-    func didDetectNewDevice() {
-        self.update()
+        
+        // Hacky way to update the percentage of the scan by abusing BarButtonItem
+        let _ = dependencies.verifoneDetectorService.progress.asObservable()
+            .subscribe({ progress in
+                let item : UIBarButtonItem = self.navigationItem.rightBarButtonItems![1]
+                guard let newValue : Float = progress.element else {
+                    return
+                }
+                
+                var updatedString : String
+                if newValue == 100.0 || newValue == 0.0 {
+                    updatedString = ""
+                } else {
+                    updatedString = String(format: "%.0f", newValue) + "%"
+                }
+                
+                if newValue == 100.0 {
+                    self.navigationItem.rightBarButtonItems![0].title = ScanButton.Start.rawValue
+                }
+                
+                item.title = updatedString
+            })
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

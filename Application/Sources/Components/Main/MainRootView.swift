@@ -7,6 +7,8 @@ final class MainRootView: ViewBase<[Device], PlainTableViewAction<DeviceCell>> {
 
     let deviceTableView = PlainTableView<DeviceCell>(reloadable: false)
     
+    // TODO: find out how to add a UIProgressView (correctly)
+    
     override var actions: [Observable<PlainTableViewAction<DeviceCell>>] {
         return [deviceTableView.action]
     }

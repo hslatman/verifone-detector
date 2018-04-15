@@ -16,6 +16,8 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     var scanner : NetworkScanner!
     var recognizer : VerifoneRecognizer!
     
+    var progress: BehaviorRelay<Float> = BehaviorRelay(value: 0.0)
+    
     var dataService : DataService?
     
     override init() {
@@ -37,10 +39,6 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
         self.scanner.stopScan()
     }
     
-    func networkScannerIPSearchFinished() {
-        print("ping finished")
-    }
-    
     func networkScannerDidFindNewDevice(device: MMDevice) {
         // Extract fields from MMDevice
         let deviceModel = Device()
@@ -53,14 +51,27 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     
     func networkScannerIPSearchCancelled() {
         print("ping cancelled")
+        self.progress.accept(100.0)
     }
     
     func networkScannerIPSearchFailed() {
         print("ping failed")
+        self.progress.accept(100.0)
     }
     
     func networkScannerIPSearchStarted() {
         print("ping started")
+        self.progress.accept(0.0)
+    }
+    
+    func networkScannerIPSearchFinished() {
+        print("ping finished")
+        self.progress.accept(100.0)
+    }
+    
+    func networkScannerProgressPinged(progress: Float) {
+        print("progress: \(progress)")
+        self.progress.accept(progress)
     }
     
     func performVeriFoneRecognition(ip: IPAddress) {

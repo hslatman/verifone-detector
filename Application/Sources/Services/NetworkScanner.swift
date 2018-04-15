@@ -14,6 +14,7 @@ protocol NetworkScannerDelegate {
     func networkScannerIPSearchCancelled()
     func networkScannerIPSearchFailed()
     func networkScannerIPSearchStarted()
+    func networkScannerProgressPinged(progress: Float)
     func networkScannerDidFindNewDevice(device: MMDevice)
 }
 
@@ -62,6 +63,7 @@ class NetworkScanner : NSObject, MMLANScannerDelegate {
     
     func lanScanProgressPinged(_ pingedHosts: Float, from overallHosts: Int) {
         self.progressValue = pingedHosts / Float(overallHosts)
+        self.delegate?.networkScannerProgressPinged(progress: self.progressValue * 100)
     }
     
     func lanScanDidFindNewDevice(_ device: MMDevice!) {
