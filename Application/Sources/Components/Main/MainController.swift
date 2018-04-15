@@ -25,6 +25,10 @@ final class MainController: ControllerBase<Void, MainRootView> {
     }
     
     override func afterInit() {
+        
+        // Initialize the ComponentState of the RootView
+        self.rootView.componentState = (devices: [], progress: 0.0)
+        
         // Add button for starting a scan
         let rightBarButtonItem = UIBarButtonItem(title: ScanButton.Start.rawValue, style: .plain) { [unowned self, dependencies] in
             
@@ -65,7 +69,7 @@ final class MainController: ControllerBase<Void, MainRootView> {
         
         let _ = Observable.array(from: devices)
             .subscribe(onNext: { devices  in
-                self.rootView.componentState = devices
+                self.rootView.componentState.devices = devices
             })
         
         // Hacky way to update the percentage of the scan by abusing BarButtonItem

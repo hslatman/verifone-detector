@@ -3,7 +3,7 @@ import RxSwift
 import RealmSwift
 import RxRealmDataSources
 
-final class MainRootView: ViewBase<[Device], PlainTableViewAction<DeviceCell>> {
+final class MainRootView: ViewBase<(devices: [Device], progress: Float), PlainTableViewAction<DeviceCell>> {
 
     let deviceTableView = PlainTableView<DeviceCell>(reloadable: false)
     
@@ -14,7 +14,7 @@ final class MainRootView: ViewBase<[Device], PlainTableViewAction<DeviceCell>> {
     }
     
     override func update() {
-        deviceTableView.componentState = componentState.isEmpty ? .empty(message: "No devices scanned so far!") : .items(componentState)
+        deviceTableView.componentState = componentState.devices.isEmpty ? .empty(message: "No devices scanned so far!") : .items(componentState.devices)
     }
     
     override func loadView() {
