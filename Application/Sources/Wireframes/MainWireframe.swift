@@ -14,7 +14,7 @@ final class MainWireframe: Wireframe {
     }
 
     private func main() -> MainController {
-        let dependencies = MainController.Dependencies(verifoneDetectorService: module.verifoneDetectorService)
+        let dependencies = MainController.Dependencies(verifoneDetectorService: module.verifoneDetectorService, dataService: module.dataService)
         
         return create { provider in
             return MainController(dependencies: dependencies)
