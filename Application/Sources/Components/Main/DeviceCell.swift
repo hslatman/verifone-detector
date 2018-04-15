@@ -9,14 +9,14 @@ import UIKit
 import Reactant
 
 final class DeviceCell: ViewBase<Device, Void>, Reactant.TableViewCell {
-    static let height: CGFloat = 80
+    static let height: CGFloat = 60
     
     let ip = UILabel()
     let isVerifone = UILabel()
     
     override func update() {
         ip.text = componentState.ip
-        isVerifone.text = componentState.isVerifone ? "YES" : "NO"
+        isVerifone.text = componentState.isVerifone ? "\u{2713}" : "-"
     }
     
     func setHighlighted(_ highlighted: Bool, animated: Bool) {

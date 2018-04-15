@@ -9,9 +9,9 @@ import Foundation
 
 import RxSwift
 
-//protocol VerifoneDetectorDelegate {
-//    func didDetectNewDevice()
-//}
+protocol VerifoneDetectorDelegate {
+    func didDetectNewDevice()
+}
 
 class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
 
@@ -22,7 +22,7 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     
     var detectedDevices : Variable<[Device]> = Variable([])//Results<Device>?
     
-    //var delegate : VerifoneDetectorDelegate?
+    var delegate : VerifoneDetectorDelegate?
     
     override init() {
 
@@ -112,11 +112,14 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
             print("is verifone: \(isVerifone)")
             
             // Update the item, if necessary
-            for var detectedDevice : Device in self.detectedDevices.value {
+            //if isVerifone {
+            for detectedDevice : Device in self.detectedDevices.value {
                 if ip == detectedDevice.ip {
-                    detectedDevice.isVerifone = true
+                    detectedDevice.isVerifone = isVerifone
+                    self.delegate?.didDetectNewDevice()
                 }
             }
+            //}
         }
     }
     

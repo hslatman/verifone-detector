@@ -1,7 +1,7 @@
 import Reactant
 
-final class MainController: ControllerBase<Void, MainRootView> {
-    
+final class MainController: ControllerBase<Void, MainRootView>,VerifoneDetectorDelegate {
+
     struct Dependencies {
         let verifoneDetectorService: VeriFoneDetectorService
     }
@@ -28,6 +28,10 @@ final class MainController: ControllerBase<Void, MainRootView> {
             })
             .disposed(by: lifetimeDisposeBag)
         }
+    
+    func didDetectNewDevice() {
+        self.update()
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         invalidate()

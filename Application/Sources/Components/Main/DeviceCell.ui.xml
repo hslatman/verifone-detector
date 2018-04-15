@@ -8,17 +8,17 @@
     
     <Label
     field="ip"
-    font=":bold@20"
+    font="16"
     numberOfLines="2"
-    layout:leading="super inset(8)"
+    layout:leading="super inset(20)"
     layout:trailing="super inset(8)"
     layout:top="super inset(10)" />
     
     <Label
     field="isVerifone"
-    font="18"
+    font=":bold@20"
     numberOfLines="1"
-    layout:fillHorizontally="super inset(8)"
-    layout:below="ip offset(10)"
+    layout:fillHorizontally="ip inset(160)"
+    layout:top="offset(8)"
     layout:bottom=":lt super inset(1)" />
 </Component>
