@@ -8,7 +8,7 @@
 import Foundation
 
 struct Device {
-    var ip : String
+    var ip : IPAddress
     //    var mac : String
     //    var brand : String
     //    var host : String

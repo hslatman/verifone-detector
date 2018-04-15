@@ -54,7 +54,13 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     func networkScannerDidFindNewDevice(device: Device) {
         print("new device: \(device.ip)")
         
-        self.detectedDevices.value.append(device)
+        let ips : [IPAddress] = detectedDevices.value.map { detectedDevice in
+            detectedDevice.ip
+        }
+        
+        if !ips.contains(device.ip) {
+            self.detectedDevices.value.append(device)
+        }
     }
     
     func networkScannerIPSearchCancelled() {
