@@ -42,7 +42,7 @@ class DataService {
             autoreleasepool {
                 let realm = try! Realm()
                 let count = realm.objects(Device.self).count
-                print("count: \(count)")
+                print("clearing \(count) device(s)")
                 try! realm.write {
                     realm.delete(realm.objects(Device.self))
                 }

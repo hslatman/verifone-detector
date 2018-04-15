@@ -31,13 +31,17 @@ final class MainController: ControllerBase<Void, MainRootView>,VerifoneDetectorD
         }
     }
     
-    override func update() {        
-        dependencies.verifoneDetectorService.detectedDevices.asObservable()
-            .subscribe(onNext: { [unowned self] devices in
+    override func update() {
+        
+        // Register Realm as data source; react to collection changes through RxRealm
+        let realm = try! Realm()
+        let devices = realm.objects(Device.self)
+        
+        let _ = Observable.array(from: devices)
+            .subscribe(onNext: { devices  in
                 self.rootView.componentState = devices
             })
-            .disposed(by: lifetimeDisposeBag)
-        }
+    }
     
     func didDetectNewDevice() {
         self.update()
