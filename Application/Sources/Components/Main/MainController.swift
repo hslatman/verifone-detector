@@ -4,7 +4,7 @@ import RealmSwift
 import RxRealm
 import RxSwift
 
-final class MainController: ControllerBase<Void, MainRootView>,VerifoneDetectorDelegate {
+final class MainController: ControllerBase<Void, MainRootView> {
 
     struct Dependencies {
         let verifoneDetectorService: VeriFoneDetectorService

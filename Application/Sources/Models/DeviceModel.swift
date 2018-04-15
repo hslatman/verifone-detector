@@ -9,6 +9,8 @@ import Foundation
 
 import RealmSwift
 
+typealias IPAddress = String
+
 class Device : Object {
     @objc dynamic var ip : IPAddress = ""
     @objc dynamic var isVerifone : Bool = false
@@ -17,8 +19,4 @@ class Device : Object {
         return "ip"
     }
 
-    //    var mac : String
-    //    var brand : String
-    //    var host : String
-    //var isVerifone : Bool
 }

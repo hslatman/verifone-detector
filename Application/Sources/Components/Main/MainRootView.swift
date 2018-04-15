@@ -12,7 +12,7 @@ final class MainRootView: ViewBase<[Device], PlainTableViewAction<DeviceCell>> {
     }
     
     override func update() {
-        deviceTableView.componentState = componentState.isEmpty ? .empty(message: "No devices so far!") : .items(componentState)
+        deviceTableView.componentState = componentState.isEmpty ? .empty(message: "No devices scanned so far!") : .items(componentState)
     }
     
     override func loadView() {

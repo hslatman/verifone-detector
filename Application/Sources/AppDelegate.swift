@@ -10,9 +10,9 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]?) -> Bool {
         
+        // Realm Configuration
         var configuration : Realm.Configuration = Realm.Configuration.defaultConfiguration
         configuration.deleteRealmIfMigrationNeeded = true
-        
         Realm.Configuration.defaultConfiguration = configuration
         
         Configuration.global.set(Properties.Style.controllerRoot, to: GeneralStyles.controllerRootView)

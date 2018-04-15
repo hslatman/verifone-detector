@@ -11,19 +11,10 @@ import RxSwift
 import RxCocoa
 import MMLanScan
 
-
-protocol VerifoneDetectorDelegate {
-    func didDetectNewDevice()
-}
-
 class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     
     var scanner : NetworkScanner!
     var recognizer : VerifoneRecognizer!
-    
-    var detectedDevices : BehaviorRelay<[Device]> = BehaviorRelay(value: [])//Results<Device>?
-    
-    var delegate : VerifoneDetectorDelegate?
     
     var dataService : DataService?
     
@@ -31,7 +22,7 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
 
         super.init()
 
-        self.scanner = NetworkScanner(delegate: self) //NetworkScannerRunner(delegate: self)
+        self.scanner = NetworkScanner(delegate: self)
         self.recognizer = VerifoneRecognizer()
         
     }
@@ -47,41 +38,12 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     }
     
     func networkScannerDidFindNewDevice(device: MMDevice) {
-        print("new device: \(device.ipAddress)")
-        
+        // Extract fields from MMDevice
         let deviceModel = Device()
         deviceModel.ip = device.ipAddress
         
+        // Store the new device and check whether it's a VeriFone device
         self.dataService?.add(deviceModel)
-        
-        // Perform check for existing IPs
-//        let ips : [IPAddress] = detectedDevices.value.map { detectedDevice in
-//            detectedDevice.ip
-//        }
-//
-//        if !ips.contains(device.ip) {
-//            // Note: it looks a bit ugly; is this the way to go?
-//            // https://github.com/ReactiveX/RxSwift/issues/1501#issuecomment-349562384
-//            self.detectedDevices.accept(self.detectedDevices.value + [device])
-//        }
-        
-        
-        
-//        let ip = device.ip
-//        let predicate = NSPredicate(format: "%K = %@", "ip", ip)
-//        if detectedDevices.filter(predicate).count == 0 {
-//            // Query and update from any thread
-//            DispatchQueue.global(qos: .background).async {
-//                autoreleasepool {
-//                    let realm = try! Realm()
-//                    try! realm.write {
-//                        realm.add(device)
-//                    }
-//                }
-//            }
-//        }
-        
-        // No matter what happens; we'll always perform the port scan on the IP
         self.performVeriFoneRecognition(ip: device.ipAddress)
     }
     
@@ -98,18 +60,8 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     }
     
     func performVeriFoneRecognition(ip: IPAddress) {
-
         DispatchQueue.global(qos: .background).async {
             let isVerifone = self.recognizer.check(ip: ip)
-            print("is verifone: \(isVerifone)")
-            
-//            // Update the item
-//            for detectedDevice : Device in self.detectedDevices.value {
-//                if ip == detectedDevice.ip {
-//                    detectedDevice.isVerifone = isVerifone
-//                    self.delegate?.didDetectNewDevice()
-//                }
-//            }
             self.dataService?.update(ip: ip, isVerifone: isVerifone)
         }
     }

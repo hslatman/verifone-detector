@@ -9,8 +9,6 @@ import Foundation
 
 import MMLanScan
 
-typealias IPAddress = String
-
 protocol NetworkScannerDelegate {
     func networkScannerIPSearchFinished()
     func networkScannerIPSearchCancelled()
@@ -69,11 +67,6 @@ class NetworkScanner : NSObject, MMLANScannerDelegate {
     func lanScanDidFindNewDevice(_ device: MMDevice!) {
         if(!self.scannedDevices.contains(device)) {
             self.scannedDevices.append(device)
-            print("\(device): \(device.ipAddress)")
-            
-            //let deviceModel = Device() //Device(ip: device.ipAddress, isVerifone: false)
-            //deviceModel.ip = device.ipAddress
-            //deviceModel.isVerifone = false
             self.delegate?.networkScannerDidFindNewDevice(device: device)
         }
     }
