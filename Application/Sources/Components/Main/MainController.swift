@@ -4,6 +4,11 @@ import RealmSwift
 import RxRealm
 import RxSwift
 
+enum ScanButton : String {
+    case Start = "Start"
+    case Stop = "Stop"
+}
+
 final class MainController: ControllerBase<Void, MainRootView> {
 
     struct Dependencies {
@@ -21,24 +26,24 @@ final class MainController: ControllerBase<Void, MainRootView> {
     
     override func afterInit() {
         // Add button for starting a scan
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .plain) { [unowned self, dependencies] in
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: ScanButton.Start.rawValue, style: .plain) { [unowned self, dependencies] in
             
             guard let buttonItem = self.navigationItem.rightBarButtonItem, let text = buttonItem.title else {
                 print("returning")
                 return
             }
             
-            if text == "Start" {
-                dependencies.verifoneDetectorService.startDetection()
-                buttonItem.title = "Stop"
-            } else {
+            if text == ScanButton.Stop.rawValue {
+                buttonItem.title = ScanButton.Start.rawValue
                 dependencies.verifoneDetectorService.stopDetection()
-                buttonItem.title = "Start"
+            } else {
+                buttonItem.title = ScanButton.Stop.rawValue
+                dependencies.verifoneDetectorService.startDetection()
             }
-            
             
             self.invalidate()
         }
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Clear", style: .plain) { [unowned self, dependencies] in
             dependencies.dataService.clear()
             self.invalidate()
