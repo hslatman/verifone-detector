@@ -6,8 +6,8 @@ Early POC (WIP) for detecting Verifone EFT systems on a (local) network
 
 ## TODO
 
-1. Add persistence through Realm
-1. Improve RxSwift/RxRealmDataSources
+1. ~Add persistence through Realm~
+1. ~Improve RxSwift/RxRealmDataSources~
 
 
 
