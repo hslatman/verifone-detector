@@ -32,6 +32,10 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
         self.scanner.startScan()
     }
     
+    func stopDetection() {
+        print("stopping scan")
+        self.scanner.stopScan()
+    }
     
     func networkScannerIPSearchFinished() {
         print("ping finished")

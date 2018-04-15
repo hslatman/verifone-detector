@@ -22,7 +22,21 @@ final class MainController: ControllerBase<Void, MainRootView> {
     override func afterInit() {
         // Add button for starting a scan
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .plain) { [unowned self, dependencies] in
-            dependencies.verifoneDetectorService.startDetection()
+            
+            guard let buttonItem = self.navigationItem.rightBarButtonItem, let text = buttonItem.title else {
+                print("returning")
+                return
+            }
+            
+            if text == "Start" {
+                dependencies.verifoneDetectorService.startDetection()
+                buttonItem.title = "Stop"
+            } else {
+                dependencies.verifoneDetectorService.stopDetection()
+                buttonItem.title = "Start"
+            }
+            
+            
             self.invalidate()
         }
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Clear", style: .plain) { [unowned self, dependencies] in
