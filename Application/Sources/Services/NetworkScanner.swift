@@ -51,34 +51,7 @@ class NetworkScanner : NSObject, MMLANScannerDelegate {
         self.isScanRunning = false
         self.delegate?.networkScannerIPSearchCancelled()
     }
-    
-    
-    //    func startAsyncScan() -> Promise<[IPAddress]> {
-    //        // Return a Promise for the caller of this function to use.
-    //        return Promise { fulfill in
-    //
-    //            let result = startScan()
-    //
-    //            //fulfill(result)
-    //
-    //        }
-    //    }
-    
-    //    func startAsyncScan(timeout: Int = 10, completion: @escaping ([IPAddress]) -> Void) {
-    //        completion(startScan())
-    //    }
-    
-    
-    //func asyncCall(parameter: String, completion: (String) -> Void)
-    
-    //    func stopScan() {
-    //        self.lanScanner.stop()
-    //    }
-    
-    //    func isDone() -> Bool {
-    //        return self.scanComplete
-    //    }
-    
+ 
     func retrieveResult() -> [IPAddress] {
         
         var result : [String] = []

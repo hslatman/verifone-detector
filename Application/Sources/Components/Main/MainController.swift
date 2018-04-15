@@ -25,20 +25,7 @@ final class MainController: ControllerBase<Void, MainRootView>,VerifoneDetectorD
         }
     }
     
-    override func update() {
-        //let realm = try! Realm()
-        //let devices = realm.objects(Device.self)
-        
-//        Observable.collection(from: devices)
-////            .map {
-////                laps in "\(laps.count) laps"
-////            }
-//            .subscribe({ [unowned self] devices in
-//                self.rootView.componentState = devices
-//            })
-//            .disposed(by: lifetimeDisposeBag)
-        
-        
+    override func update() {        
         dependencies.verifoneDetectorService.detectedDevices.asObservable()
             .subscribe(onNext: { [unowned self] devices in
                 self.rootView.componentState = devices

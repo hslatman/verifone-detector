@@ -56,7 +56,6 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
             self.detectedDevices.accept(self.detectedDevices.value + [device])
         }
         
-        //if 1detectedDevices.contains(
 //        let ip = device.ip
 //        let predicate = NSPredicate(format: "%K = %@", "ip", ip)
 //        if detectedDevices.filter(predicate).count == 0 {
@@ -70,12 +69,6 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
 //                }
 //            }
 //        }
-        
-//        let ip = device.ip
-//        if !detectedDevices.value.keys.contains(ip) {
-//            self.detectedDevices.value[ip] = device
-//        }
-        
         
         // No matter what happens; we'll always perform the port scan on the IP
         self.performVeriFoneRecognition(ip: device.ip)
@@ -99,39 +92,13 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
             let isVerifone = self.recognizer.check(ip: ip)
             print("is verifone: \(isVerifone)")
             
-            // Update the item, if necessary
-            //if isVerifone {
+            // Update the item
             for detectedDevice : Device in self.detectedDevices.value {
                 if ip == detectedDevice.ip {
                     detectedDevice.isVerifone = isVerifone
                     self.delegate?.didDetectNewDevice()
                 }
             }
-            //}
         }
     }
-    
-//    func devices() -> Observable<[Device]> {
-//
-////        let devices = [
-////            Device(ip: "192.168.1.10", isVerifone: true),
-////            Device(ip: "192.168.1.20", isVerifone: false)
-////        ]
-////        return Observable.create { observer in
-////            for element in self.detectedDevices {
-////                observer.on(.next(element))
-////            }
-////
-////            observer.on(.completed)
-////            return Disposables.create()
-////        }
-//
-//
-//        //return detectedDevices.value
-//    }
-    
-    //    func networkScannerDidFindNewDevice(device: MMDevice) {
-    //        var newDevice = DeviceModel(ip: device.ipAddress, )
-    //    }
-    
 }
