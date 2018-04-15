@@ -22,12 +22,16 @@ final class MainController: ControllerBase<Void, MainRootView> {
     }
     
     override func update() {
-        rootView.componentState =  dependencies.verifoneDetectorService.loadDevices()
+        dependencies.verifoneDetectorService.detectedDevices.asObservable()
+            .subscribe(onNext: { [unowned self] devices in
+                self.rootView.componentState = devices
+            })
+            .disposed(by: lifetimeDisposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         invalidate()
         super.viewWillAppear(animated)
     }
-
+    
 }

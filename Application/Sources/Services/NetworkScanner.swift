@@ -16,7 +16,7 @@ protocol NetworkScannerDelegate {
     func networkScannerIPSearchCancelled()
     func networkScannerIPSearchFailed()
     func networkScannerIPSearchStarted()
-    //func networkScannerDidFindNewDevice(device: MMDevice)
+    func networkScannerDidFindNewDevice(device: Device)
 }
 
 class NetworkScanner : NSObject, MMLANScannerDelegate {
@@ -97,6 +97,9 @@ class NetworkScanner : NSObject, MMLANScannerDelegate {
         if(!self.scannedDevices.contains(device)) {
             self.scannedDevices.append(device)
             print("\(device): \(device.ipAddress)")
+            
+            let deviceModel = Device(ip: device.ipAddress, isVerifone: false)
+            self.delegate?.networkScannerDidFindNewDevice(device: deviceModel)
         }
     }
     
