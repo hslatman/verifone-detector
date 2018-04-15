@@ -13,20 +13,16 @@ final class MainController: ControllerBase<Void, MainRootView> {
         super.init(title: "VeriFone Detector") // setting the title of our main page
     }
     
-//    override func afterInit() {
-//        let devices = [
-//            Device(ip: "192.168.1.10", isVerifone: true),
-//            Device(ip: "192.168.1.20", isVerifone: false)
-//        ]
-//        rootView.componentState = devices
-//    }
+    override func afterInit() {
+        // Add button for starting a scan
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .plain) { [unowned self, dependencies] in
+            dependencies.verifoneDetectorService.startDetection()
+            self.invalidate()
+        }
+    }
     
     override func update() {
-        do {
-            rootView.componentState = try dependencies.verifoneDetectorService.loadDevices()
-        } catch let error {
-            print("Failed to load devices:", error.localizedDescription)
-        }
+        rootView.componentState =  dependencies.verifoneDetectorService.loadDevices()
     }
     
     override func viewWillAppear(_ animated: Bool) {

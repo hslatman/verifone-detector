@@ -29,6 +29,7 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     
     func startDetection() {
         //self.runner.startScanner()
+        print("starting scan")
         self.scanner.startScan()
     }
     
@@ -60,7 +61,13 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     }
     
     func loadDevices() -> [Device] {
-        return []
+        
+        let devices = [
+            Device(ip: "192.168.1.10", isVerifone: true),
+            Device(ip: "192.168.1.20", isVerifone: false)
+        ]
+
+        return devices
     }
     
     //    func networkScannerDidFindNewDevice(device: MMDevice) {

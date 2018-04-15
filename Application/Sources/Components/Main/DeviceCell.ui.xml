@@ -9,16 +9,16 @@
     <Label
     field="ip"
     font=":bold@20"
-    numberOfLines="1"
+    numberOfLines="2"
     layout:leading="super inset(8)"
     layout:trailing="super inset(8)"
-    layout:top="super inset(6)" />
+    layout:top="super inset(10)" />
     
     <Label
     field="isVerifone"
-    font="20"
+    font="18"
     numberOfLines="1"
-    layout:fillHorizontally="super inset(10)"
-    layout:below="ip offset(8)"
-    layout:bottom=":lt super inset(6)" />
+    layout:fillHorizontally="super inset(8)"
+    layout:below="ip offset(10)"
+    layout:bottom=":lt super inset(1)" />
 </Component>
