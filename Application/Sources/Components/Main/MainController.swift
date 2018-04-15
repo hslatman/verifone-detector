@@ -75,25 +75,36 @@ final class MainController: ControllerBase<Void, MainRootView> {
         // Hacky way to update the percentage of the scan by abusing BarButtonItem
         let _ = dependencies.verifoneDetectorService.progress.asObservable()
             .subscribe({ progress in
-                let item : UIBarButtonItem = self.navigationItem.rightBarButtonItems![1]
                 guard let newValue : Float = progress.element else {
                     return
                 }
                 
+                self.rootView.componentState.progress = newValue
+                
+                // NOTE: below is code that updates percentage; hacky :)
+                // TODO: look into possibilities to improve this within the component?
                 var updatedString : String
-                if newValue == 100.0 || newValue == 0.0 {
+                if newValue == 1.0 || newValue == 0.0 {
                     updatedString = ""
                 } else {
-                    updatedString = String(format: "%.0f", newValue) + "%"
+                    updatedString = String(format: "%.0f", newValue * 100) + "%"
                 }
                 
-                if newValue == 100.0 {
-                    self.navigationItem.rightBarButtonItems![0].title = ScanButton.Start.rawValue
+                guard let item : UIBarButtonItem = self.navigationItem.rightBarButtonItems?[1] else {
+                    return
                 }
-                
                 item.title = updatedString
+                
+                
+                // Reset the ScanButton to Start after we're done
+                if newValue == 1.0 {
+                    guard let item : UIBarButtonItem = self.navigationItem.rightBarButtonItems?[0] else {
+                        return
+                    }
+                    item.title = ScanButton.Start.rawValue
+                }
+            
             })
-
     }
     
     override func viewWillAppear(_ animated: Bool) {

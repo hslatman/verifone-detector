@@ -7,13 +7,14 @@ final class MainRootView: ViewBase<(devices: [Device], progress: Float), PlainTa
 
     let deviceTableView = PlainTableView<DeviceCell>(reloadable: false)
     
-    // TODO: find out how to add a UIProgressView (correctly)
+    let progressView = UIProgressView()
     
     override var actions: [Observable<PlainTableViewAction<DeviceCell>>] {
         return [deviceTableView.action]
     }
     
     override func update() {
+        updateProgressView()
         deviceTableView.componentState = componentState.devices.isEmpty ? .empty(message: "No devices scanned so far!") : .items(componentState.devices)
     }
     
@@ -22,6 +23,20 @@ final class MainRootView: ViewBase<(devices: [Device], progress: Float), PlainTa
         deviceTableView.rowHeight = DeviceCell.height
         deviceTableView.separatorStyle = .singleLine
         deviceTableView.tableView.contentInset.bottom = 0
+        
+        progressView.progressViewStyle = .bar
+    }
+    
+    func updateProgressView() {
+        let progress = componentState.progress
+        if progress == 1.0 || progress == 0.0 {
+            progressView.isHidden = true
+            progressView.setProgress(0.0, animated: false)
+        } else {
+            progressView.setProgress(componentState.progress, animated: true)
+            progressView.isHidden = false
+        }
+        
     }
     
 }

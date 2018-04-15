@@ -63,7 +63,7 @@ class NetworkScanner : NSObject, MMLANScannerDelegate {
     
     func lanScanProgressPinged(_ pingedHosts: Float, from overallHosts: Int) {
         self.progressValue = pingedHosts / Float(overallHosts)
-        self.delegate?.networkScannerProgressPinged(progress: self.progressValue * 100)
+        self.delegate?.networkScannerProgressPinged(progress: self.progressValue)
     }
     
     func lanScanDidFindNewDevice(_ device: MMDevice!) {

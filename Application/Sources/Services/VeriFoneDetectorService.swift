@@ -51,12 +51,12 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     
     func networkScannerIPSearchCancelled() {
         print("ping cancelled")
-        self.progress.accept(100.0)
+        self.progress.accept(1.0)
     }
     
     func networkScannerIPSearchFailed() {
         print("ping failed")
-        self.progress.accept(100.0)
+        self.progress.accept(1.0)
     }
     
     func networkScannerIPSearchStarted() {
@@ -66,7 +66,7 @@ class VeriFoneDetectorService : NSObject, NetworkScannerDelegate {
     
     func networkScannerIPSearchFinished() {
         print("ping finished")
-        self.progress.accept(100.0)
+        self.progress.accept(1.0)
     }
     
     func networkScannerProgressPinged(progress: Float) {
