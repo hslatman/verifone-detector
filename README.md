@@ -6,9 +6,11 @@ Early POC (WIP) for detecting Verifone EFT systems on a (local) network
 
 ## TODO
 
-1. ~Add persistence through Realm~
-1. ~Improve RxSwift/RxRealmDataSources~
-
+* ~Add persistence through Realm~
+* ~Improve RxSwift/RxRealmDataSources~
+* Fix progress measurement (currently based on percentage on network that was pinged)
+* Improve queueing of scans
+* Add some checks for current network availability and subnet
 
 
 
