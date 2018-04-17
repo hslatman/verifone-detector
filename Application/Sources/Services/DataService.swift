@@ -13,10 +13,12 @@ class DataService {
     
     func add(_ device: Device) {
         DispatchQueue(label: "realm").async {
-            print("adding: \(device)")
-            let realm = try! Realm()
-            try! realm.write {
-                realm.add(device, update: true)
+            autoreleasepool {
+                print("adding: \(device)")
+                let realm = try! Realm()
+                try! realm.write {
+                    realm.add(device, update: true)
+                }
             }
         }
     }
