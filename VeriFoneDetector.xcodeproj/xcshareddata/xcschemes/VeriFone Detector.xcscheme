@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "OBJ_37"
-               BuildableName = "VeriFone_Detector.app"
-               BlueprintName = "VeriFone Detector"
-               ReferencedContainer = "container:VeriFone Detector.xcodeproj">
+               BuildableName = "VeriFoneDetector.app"
+               BlueprintName = "VeriFoneDetector"
+               ReferencedContainer = "container:VeriFoneDetector.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "OBJ_57"
-               BuildableName = "VeriFone DetectorUnitTests.xctest"
-               BlueprintName = "VeriFone DetectorUnitTests"
-               ReferencedContainer = "container:VeriFone Detector.xcodeproj">
+               BuildableName = "VeriFoneDetectorUnitTests.xctest"
+               BlueprintName = "VeriFoneDetectorUnitTests"
+               ReferencedContainer = "container:VeriFoneDetector.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,9 +59,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "OBJ_37"
-            BuildableName = "VeriFone_Detector.app"
-            BlueprintName = "VeriFone Detector"
-            ReferencedContainer = "container:VeriFone Detector.xcodeproj">
+            BuildableName = "VeriFoneDetector.app"
+            BlueprintName = "VeriFoneDetector"
+            ReferencedContainer = "container:VeriFoneDetector.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "OBJ_37"
-            BuildableName = "VeriFone_Detector.app"
-            BlueprintName = "VeriFone Detector"
-            ReferencedContainer = "container:VeriFone Detector.xcodeproj">
+            BuildableName = "VeriFoneDetector.app"
+            BlueprintName = "VeriFoneDetector"
+            ReferencedContainer = "container:VeriFoneDetector.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

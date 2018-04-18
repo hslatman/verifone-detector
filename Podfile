@@ -1,8 +1,8 @@
 platform :ios, '9.0'
-target 'VeriFone Detector' do
+target 'VeriFoneDetector' do
     use_frameworks!
     pod 'Reactant', '~> 1.0'
-    pod 'ReactantUI'
+    pod 'ReactantUI', :git => 'https://github.com/Brightify/ReactantUI.git', :branch => 'master'
     pod 'ReactantLiveUI', :configuration => 'Debug'
     pod 'MMLanScan'
     pod 'SwiftSocket'
