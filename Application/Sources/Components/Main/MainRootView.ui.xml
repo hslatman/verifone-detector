@@ -7,17 +7,17 @@
                         http://schema.reactant.tech/layout http://schema.reactant.tech/layout.xsd"
     rootView="true">
 
-    <View
-    field="progressView"
-    layout:top="offset(0)"
-    layout:fillHorizontally="super"
-    />
+    <ProgressView
+      field="progressView"
+      progress="0.0"
+      layout:fillHorizontally="super"
+      layout:top="offset(0)" />
 
     <View
     field="deviceTableView"
     layout:edges="super"
     layout:top="progressView offset(0)"/>
-    
-    
+
+
 
 </Component>
