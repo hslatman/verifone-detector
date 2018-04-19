@@ -23,7 +23,7 @@ PODS:
     - Reactant/Core
     - RxCocoa (~> 4.0)
     - RxDataSources (~> 3.0)
-  - ReactantLiveUI (0.2.0):
+  - ReactantLiveUI (0.3.0):
     - Reactant (> 1.0)
     - Reactant/FallbackSafeAreaInsets (> 1.0)
     - Reactant/TableView (> 1.0)
@@ -59,7 +59,7 @@ PODS:
 DEPENDENCIES:
   - MMLanScan
   - Reactant (~> 1.0)
-  - ReactantLiveUI
+  - ReactantLiveUI (from `https://github.com/Brightify/ReactantUI.git`, branch `master`)
   - ReactantUI (from `https://github.com/Brightify/ReactantUI.git`, branch `master`)
   - RealmSwift
   - RxRealm
@@ -67,11 +67,17 @@ DEPENDENCIES:
   - SwiftSocket
 
 EXTERNAL SOURCES:
+  ReactantLiveUI:
+    :branch: master
+    :git: https://github.com/Brightify/ReactantUI.git
   ReactantUI:
     :branch: master
     :git: https://github.com/Brightify/ReactantUI.git
 
 CHECKOUT OPTIONS:
+  ReactantLiveUI:
+    :commit: 3bc05339b4bd673bc7e8175a920eb3ffa433282c
+    :git: https://github.com/Brightify/ReactantUI.git
   ReactantUI:
     :commit: 3bc05339b4bd673bc7e8175a920eb3ffa433282c
     :git: https://github.com/Brightify/ReactantUI.git
@@ -80,7 +86,7 @@ SPEC CHECKSUMS:
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
   Reactant: 1910427bc0b05afeeb4e959e24bdd768dedb5258
-  ReactantLiveUI: 6d6d8b2aaebcf00aec456b9b948333f9e0a896e9
+  ReactantLiveUI: 67bc9c3d5589e6aabb4803d874f298192c100d03
   ReactantUI: f05d2b9ac81ea1c7da1fc03566c2fabd9bcf6850
   Realm: d927fbf66df5532cfafc08afb5f7e53ded37b894
   RealmSwift: 4e903a494e05d866581d69ad6f7e7b879d446baf
@@ -94,6 +100,6 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: 806d59eae123b83d0cb0e6da2cde646e24c85aa4
+PODFILE CHECKSUM: de2b35478220ba8516e12bb400ad510e86ad8d2a
 
 COCOAPODS: 1.4.0
