@@ -9,4 +9,8 @@ target 'VeriFoneDetector' do
     pod 'RealmSwift'
     pod 'RxRealm'
     pod 'RxRealmDataSources'
+    
+    target 'VeriFoneDetectorUnitTests' do
+        inherit! :search_paths
+    end
 end

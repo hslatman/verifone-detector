@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B4993D07B8131BBC3BB49AE /* Pods_VeriFoneDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5206D7F6D7829D72EEB911 /* Pods_VeriFoneDetector.framework */; };
+		3D4BD38C133EEFE1F77E08D2 /* Pods_VeriFoneDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B319463146621F0B2F8B418D /* Pods_VeriFoneDetector.framework */; };
+		CA16C9A6BFDC481A985C3ABD /* Pods_VeriFoneDetectorUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B697462D32D50CA51A4562 /* Pods_VeriFoneDetectorUnitTests.framework */; };
+		DF307ADE2091C28900B056CF /* VeriFoneEmulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF307ADD2091C28900B056CF /* VeriFoneEmulator.swift */; };
+		DF307AE12091C2DA00B056CF /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF307AE02091C2DA00B056CF /* SynchronizedArray.swift */; };
+		DF307AE32091C2F100B056CF /* NetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF307AE22091C2F100B056CF /* NetworkUtilities.swift */; };
 		DF3C4889208376E2003D0559 /* Results+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C4888208376E2003D0559 /* Results+Rx.swift */; };
 		DF3C488B2083B1A4003D0559 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C488A2083B1A4003D0559 /* DataService.swift */; };
 		DFF76B28208004810009BCB9 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF76B27208004810009BCB9 /* DeviceModel.swift */; };
@@ -30,17 +34,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81171C590A40FF19115B3B68 /* Pods-VeriFoneDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFoneDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFoneDetector/Pods-VeriFoneDetector.release.xcconfig"; sourceTree = "<group>"; };
-		8D63DD3E3A5201014B9B3055 /* Pods-VeriFoneDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFoneDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFoneDetector/Pods-VeriFoneDetector.debug.xcconfig"; sourceTree = "<group>"; };
-		CA5206D7F6D7829D72EEB911 /* Pods_VeriFoneDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriFoneDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98EF42F7D6DE8CB1A69F29B0 /* Pods-VeriFoneDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFoneDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFoneDetector/Pods-VeriFoneDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		A903A57FBA1F508901F65EEB /* Pods-VeriFoneDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFoneDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFoneDetector/Pods-VeriFoneDetector.release.xcconfig"; sourceTree = "<group>"; };
+		B319463146621F0B2F8B418D /* Pods_VeriFoneDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriFoneDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8B697462D32D50CA51A4562 /* Pods_VeriFoneDetectorUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriFoneDetectorUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF307ADD2091C28900B056CF /* VeriFoneEmulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriFoneEmulator.swift; sourceTree = "<group>"; };
+		DF307AE02091C2DA00B056CF /* SynchronizedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
+		DF307AE22091C2F100B056CF /* NetworkUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtilities.swift; sourceTree = "<group>"; };
 		DF3C4888208376E2003D0559 /* Results+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+Rx.swift"; sourceTree = "<group>"; };
 		DF3C488A2083B1A4003D0559 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		DFE4D1686D3875671E99BAB7 /* Pods-VeriFoneDetectorUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFoneDetectorUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFoneDetectorUnitTests/Pods-VeriFoneDetectorUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFF76B27208004810009BCB9 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		DFF76B29208006440009BCB9 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		DFF76B2B208007EE0009BCB9 /* DeviceCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DeviceCell.ui.xml; sourceTree = "<group>"; };
 		DFF76B2D20800A3B0009BCB9 /* NetworkScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScanner.swift; sourceTree = "<group>"; };
 		DFF76B2F20800A500009BCB9 /* VeriFoneRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriFoneRecognizer.swift; sourceTree = "<group>"; };
 		DFF76B3120800B620009BCB9 /* VeriFoneDetectorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriFoneDetectorService.swift; sourceTree = "<group>"; };
+		F10C2659410389372F54AF21 /* Pods-VeriFoneDetectorUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriFoneDetectorUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeriFoneDetectorUnitTests/Pods-VeriFoneDetectorUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		OBJ_11 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
 		OBJ_17 /* MainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootView.swift; sourceTree = "<group>"; };
 		OBJ_18 /* MainRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MainRootView.ui.xml; sourceTree = "<group>"; };
@@ -65,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				4B4993D07B8131BBC3BB49AE /* Pods_VeriFoneDetector.framework in Frameworks */,
+				3D4BD38C133EEFE1F77E08D2 /* Pods_VeriFoneDetector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,27 +83,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				CA16C9A6BFDC481A985C3ABD /* Pods_VeriFoneDetectorUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		771317E2E9A54E4D74A9116B /* Pods */ = {
+		2335392EF66A4269F043A8AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8D63DD3E3A5201014B9B3055 /* Pods-VeriFoneDetector.debug.xcconfig */,
-				81171C590A40FF19115B3B68 /* Pods-VeriFoneDetector.release.xcconfig */,
+				98EF42F7D6DE8CB1A69F29B0 /* Pods-VeriFoneDetector.debug.xcconfig */,
+				A903A57FBA1F508901F65EEB /* Pods-VeriFoneDetector.release.xcconfig */,
+				DFE4D1686D3875671E99BAB7 /* Pods-VeriFoneDetectorUnitTests.debug.xcconfig */,
+				F10C2659410389372F54AF21 /* Pods-VeriFoneDetectorUnitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		ECB123AE94BAB49054FE07CE /* Frameworks */ = {
+		B215F32212AAC011B5F93047 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA5206D7F6D7829D72EEB911 /* Pods_VeriFoneDetector.framework */,
+				B319463146621F0B2F8B418D /* Pods_VeriFoneDetector.framework */,
+				C8B697462D32D50CA51A4562 /* Pods_VeriFoneDetectorUnitTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF307ADF2091C2AD00B056CF /* Utiliies */ = {
+			isa = PBXGroup;
+			children = (
+				DF307ADD2091C28900B056CF /* VeriFoneEmulator.swift */,
+				DF307AE02091C2DA00B056CF /* SynchronizedArray.swift */,
+				DF307AE22091C2F100B056CF /* NetworkUtilities.swift */,
+			);
+			path = Utiliies;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Generated */ = {
@@ -107,6 +131,7 @@
 		OBJ_12 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DF307ADF2091C2AD00B056CF /* Utiliies */,
 				OBJ_13 /* Models */,
 				OBJ_15 /* Components */,
 				OBJ_20 /* Styles */,
@@ -201,8 +226,8 @@
 				OBJ_6 /* Products */,
 				OBJ_9 /* Application */,
 				OBJ_34 /* UnitTests */,
-				771317E2E9A54E4D74A9116B /* Pods */,
-				ECB123AE94BAB49054FE07CE /* Frameworks */,
+				2335392EF66A4269F043A8AA /* Pods */,
+				B215F32212AAC011B5F93047 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,13 +257,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "VeriFoneDetector" */;
 			buildPhases = (
-				F605EBAE77ABB476203828BF /* [CP] Check Pods Manifest.lock */,
+				C637C0AAC03EA458B22AB038 /* [CP] Check Pods Manifest.lock */,
 				OBJ_41 /* Run ReactantUI */,
 				OBJ_42 /* Sources */,
 				OBJ_52 /* Resources */,
 				OBJ_56 /* Frameworks */,
-				34B9B59727D630EDA264CAE7 /* [CP] Embed Pods Frameworks */,
-				ED57C415FF43A8F4EA5AFF1A /* [CP] Copy Pods Resources */,
+				9149E4CD8609CB40F30C070F /* [CP] Embed Pods Frameworks */,
+				6D00DD42FCDEC6CD7E8B877B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "VeriFoneDetectorUnitTests" */;
 			buildPhases = (
+				A5B91C760EEF83A1FF845841 /* [CP] Check Pods Manifest.lock */,
 				OBJ_61 /* Sources */,
 				OBJ_63 /* Resources */,
 				OBJ_64 /* Frameworks */,
+				430E840DC758434FD979D1F1 /* [CP] Embed Pods Frameworks */,
+				6110D95DE3D6775A50DC8CDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,7 +347,83 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		34B9B59727D630EDA264CAE7 /* [CP] Embed Pods Frameworks */ = {
+		430E840DC758434FD979D1F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VeriFoneDetectorUnitTests/Pods-VeriFoneDetectorUnitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/MMLanScan/MMLanScan.framework",
+				"${BUILT_PRODUCTS_DIR}/Reactant/Reactant.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactantLiveUI/ReactantLiveUI.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealmDataSources/RxRealmDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMLanScan.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reactant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactantLiveUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealmDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeriFoneDetectorUnitTests/Pods-VeriFoneDetectorUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6110D95DE3D6775A50DC8CDA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeriFoneDetectorUnitTests/Pods-VeriFoneDetectorUnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D00DD42FCDEC6CD7E8B877B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeriFoneDetector/Pods-VeriFoneDetector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9149E4CD8609CB40F30C070F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,22 +469,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeriFoneDetector/Pods-VeriFoneDetector-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED57C415FF43A8F4EA5AFF1A /* [CP] Copy Pods Resources */ = {
+		A5B91C760EEF83A1FF845841 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeriFoneDetectorUnitTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VeriFoneDetector/Pods-VeriFoneDetector-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F605EBAE77ABB476203828BF /* [CP] Check Pods Manifest.lock */ = {
+		C637C0AAC03EA458B22AB038 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,14 +523,17 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_44 /* GeneratedUI.swift in Sources */,
+				DF307AE12091C2DA00B056CF /* SynchronizedArray.swift in Sources */,
 				DF3C488B2083B1A4003D0559 /* DataService.swift in Sources */,
 				DFF76B3220800B620009BCB9 /* VeriFoneDetectorService.swift in Sources */,
 				OBJ_45 /* MainRootView.swift in Sources */,
 				DFF76B2E20800A3B0009BCB9 /* NetworkScanner.swift in Sources */,
 				DFF76B3020800A500009BCB9 /* VeriFoneRecognizer.swift in Sources */,
+				DF307AE32091C2F100B056CF /* NetworkUtilities.swift in Sources */,
 				DF3C4889208376E2003D0559 /* Results+Rx.swift in Sources */,
 				OBJ_46 /* MainController.swift in Sources */,
 				OBJ_48 /* MainWireframe.swift in Sources */,
+				DF307ADE2091C28900B056CF /* VeriFoneEmulator.swift in Sources */,
 				OBJ_49 /* AppDelegate.swift in Sources */,
 				DFF76B28208004810009BCB9 /* DeviceModel.swift in Sources */,
 				DFF76B2A208006440009BCB9 /* DeviceCell.swift in Sources */,
@@ -468,7 +578,7 @@
 		};
 		OBJ_39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D63DD3E3A5201014B9B3055 /* Pods-VeriFoneDetector.debug.xcconfig */;
+			baseConfigurationReference = 98EF42F7D6DE8CB1A69F29B0 /* Pods-VeriFoneDetector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -509,7 +619,7 @@
 		};
 		OBJ_40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81171C590A40FF19115B3B68 /* Pods-VeriFoneDetector.release.xcconfig */;
+			baseConfigurationReference = A903A57FBA1F508901F65EEB /* Pods-VeriFoneDetector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -529,11 +639,15 @@
 		};
 		OBJ_59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE4D1686D3875671E99BAB7 /* Pods-VeriFoneDetectorUnitTests.debug.xcconfig */;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Pods",
+				);
 				INFOPLIST_FILE = UnitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_NAME = VeriFoneDetectorUnitTests;
@@ -543,11 +657,16 @@
 		};
 		OBJ_60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10C2659410389372F54AF21 /* Pods-VeriFoneDetectorUnitTests.release.xcconfig */;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Pods",
+					"(recursive)",
+				);
 				INFOPLIST_FILE = UnitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_NAME = VeriFoneDetectorUnitTests;
