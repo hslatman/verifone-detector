@@ -1,25 +1,23 @@
 PODS:
-  - Differentiator (3.0.2)
+  - Differentiator (3.1.0)
   - MMLanScan (3.0.0)
-  - Reactant (1.1.0):
-    - Reactant/Core (= 1.1.0)
-    - Reactant/Result (= 1.1.0)
-  - Reactant/Configuration (1.1.0):
-    - RxSwift (~> 4.0)
-    - SnapKit (~> 4.0)
-  - Reactant/Core (1.1.0):
+  - Reactant (1.2.0):
+    - Reactant/Core (= 1.2.0)
+    - Reactant/Result (= 1.2.0)
+  - Reactant/Configuration (1.2.0)
+  - Reactant/Core (1.2.0):
     - Reactant/Configuration
     - RxCocoa (~> 4.0)
     - RxOptional (~> 3.0)
     - RxSwift (~> 4.0)
     - SnapKit (~> 4.0)
-  - Reactant/FallbackSafeAreaInsets (1.1.0):
+  - Reactant/FallbackSafeAreaInsets (1.2.0):
     - Reactant/Core
-  - Reactant/Result (1.1.0):
+  - Reactant/Result (1.2.0):
     - Result (~> 3.0)
     - RxOptional (~> 3.0)
     - RxSwift (~> 4.0)
-  - Reactant/TableView (1.1.0):
+  - Reactant/TableView (1.2.0):
     - Reactant/Core
     - RxCocoa (~> 4.0)
     - RxDataSources (~> 3.0)
@@ -29,36 +27,38 @@ PODS:
     - Reactant/TableView (> 1.0)
     - RxCocoa
   - ReactantUI (0.3.0)
-  - Realm (3.3.2):
-    - Realm/Headers (= 3.3.2)
-  - Realm/Headers (3.3.2)
-  - RealmSwift (3.3.2):
-    - Realm (= 3.3.2)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
   - Result (3.2.4)
-  - RxCocoa (4.1.2):
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.2):
+  - RxDataSources (3.1.0):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxOptional (3.4.0):
+  - RxOptional (3.6.2):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxRealm (0.7.5):
+  - RxRealm (0.7.6):
     - RealmSwift (~> 3.0)
     - RxSwift (~> 4.0)
-  - RxRealmDataSources (0.2.9):
-    - RealmSwift (~> 3.0)
+  - RxRealmDataSources (0.2.10):
+    - RealmSwift (~> 3.10)
     - RxCocoa (~> 4.0)
-    - RxRealm (~> 0.7.3)
+    - RxRealm (~> 0.7.6)
     - RxSwift (~> 4.0)
-  - RxSwift (4.1.2)
-  - SnapKit (4.0.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - SnapKit (4.2.0)
   - SwiftSocket (2.0.2)
 
 DEPENDENCIES:
   - MMLanScan
-  - Reactant (~> 1.0)
+  - Reactant (from `https://github.com/Brightify/Reactant.git`, commit `0f506b1c45`, branch `fix/xcode10`)
   - ReactantLiveUI (from `https://github.com/Brightify/ReactantUI.git`, branch `master`)
   - ReactantUI (from `https://github.com/Brightify/ReactantUI.git`, branch `master`)
   - RealmSwift
@@ -66,7 +66,28 @@ DEPENDENCIES:
   - RxRealmDataSources
   - SwiftSocket
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Differentiator
+    - MMLanScan
+    - Realm
+    - RealmSwift
+    - Result
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxOptional
+    - RxRealm
+    - RxRealmDataSources
+    - RxSwift
+    - SnapKit
+    - SwiftSocket
+
 EXTERNAL SOURCES:
+  Reactant:
+    :branch: fix/xcode10
+    :commit: 0f506b1c45
+    :git: https://github.com/Brightify/Reactant.git
   ReactantLiveUI:
     :branch: master
     :git: https://github.com/Brightify/ReactantUI.git
@@ -75,31 +96,35 @@ EXTERNAL SOURCES:
     :git: https://github.com/Brightify/ReactantUI.git
 
 CHECKOUT OPTIONS:
+  Reactant:
+    :commit: 04e2d1cf5c1a4b55583a5560d2ccc8bf1f5cc1f5
+    :git: https://github.com/Brightify/Reactant.git
   ReactantLiveUI:
-    :commit: 3bc05339b4bd673bc7e8175a920eb3ffa433282c
+    :commit: ca9389dc4abef053485e5c78905fbf4de3b37edb
     :git: https://github.com/Brightify/ReactantUI.git
   ReactantUI:
-    :commit: 3bc05339b4bd673bc7e8175a920eb3ffa433282c
+    :commit: ca9389dc4abef053485e5c78905fbf4de3b37edb
     :git: https://github.com/Brightify/ReactantUI.git
 
 SPEC CHECKSUMS:
-  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
-  Reactant: 1910427bc0b05afeeb4e959e24bdd768dedb5258
-  ReactantLiveUI: 67bc9c3d5589e6aabb4803d874f298192c100d03
-  ReactantUI: f05d2b9ac81ea1c7da1fc03566c2fabd9bcf6850
-  Realm: d927fbf66df5532cfafc08afb5f7e53ded37b894
-  RealmSwift: 4e903a494e05d866581d69ad6f7e7b879d446baf
+  Reactant: 5e4f19b798a42b46a61db6d86b42b85d70f774d4
+  ReactantLiveUI: c36787e41b70c22cb6b47186b7008fb5d1d7bc77
+  ReactantUI: 55bbe6ba21bab8cdb5501928b46bb3e1b4cf336a
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
-  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
-  RxOptional: fabc37fc8e3cf4c336ebaeb5c92b576c64b2e6c5
-  RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
-  RxRealmDataSources: 798303f1d7db18d80da9e95bab9605010378040e
-  RxSwift: e49536837d9901277638493ea537394d4b55f570
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
+  RxRealm: 5379eddd74f8d617ca7681d1f8d144af25b432b0
+  RxRealmDataSources: 89b61c0d3edf7769da2a6bf4dcf317bc713394db
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
 
-PODFILE CHECKSUM: de2b35478220ba8516e12bb400ad510e86ad8d2a
+PODFILE CHECKSUM: 6a8d4d2ffa7404b182fff9dee29bc2992f9c2d4a
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
